@@ -18,9 +18,21 @@
 
 \maketitle
 
-%\newpage
-%\tableofcontents
-%\newpage
+d'Alambert Formel
+\[
+	u(x, t) = \half \del{
+		u_0(x + at)
+		+ u_0(x - at)
+	}
+	+ \frac{1}{2a} \int_{x-at}^{x+at} \dif s \, u_1(s)
+\]
+
+Duhamel'sches Prinzip
+\[
+	u(x, t) = \frac a2
+	\int_0^t \dif s
+	\int_{x+a(t-s)}^{x+a(t-s)} \dif y \, f(y, s)
+\]
 
 %\IfFileExists{\bibliographyfile}{
 %	\bibliography{\bibliographyfile}
